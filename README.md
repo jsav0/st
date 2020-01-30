@@ -6,5 +6,6 @@ Included patches: (2020-01-30)
 - scrollback
 - keyboard select (vim keys)
 - alphafocus-highlight
+- dracula-colors
 
 ![screenshot](http://n0a110w.xyz/img/compress/iseG.png)
