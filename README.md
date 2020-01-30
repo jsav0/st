@@ -1,5 +1,5 @@
 # st
-savage's fork of the suckless simple terminal (st)  
+my fork of the suckless simple terminal (st)  
 Included patches: (2020-01-30)
 - external pipe
 - copyurl
