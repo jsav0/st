@@ -18,4 +18,8 @@ Included patches: (2020-01-30)
   - `alt + v` : paste
   - `alt + shift + esc` : enter "vim-like mode" with keyboard select
 
+### INSTALL
+`git clone https://github.com/jsav0/st
+sudo make install`
+
 ![screenshot](http://n0a110w.xyz/img/compress/iseG.png)
