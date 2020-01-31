@@ -7,6 +7,7 @@
  */
 /*static char *font = "Liberation Mono:pixelsize=16:antialias=true:autohint=true";*/
 static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+
 static int borderpx = 2;
 
 /*
@@ -61,7 +62,7 @@ static unsigned int cursorthickness = 2;
  * bell volume. It must be a value between -100 and 100. Use 0 for disabling
  * it
  */
-static int bellvolume = 0;
+static int bellvolume = 50;
 
 /* default TERM value */
 char *termname = "st-256color";
@@ -177,9 +178,11 @@ static MouseShortcut mshortcuts[] = {
 
 /* patch: external pipe */
 static char *openurlcmd[] = { "/bin/sh", "-c",
-	"xurls | dmenu -l 10 -w $WINDOWID | xargs -r xdg-open",
+	"xurls | dmenu -l 10 | urlhandler.sh",
 	"externalpipe", NULL };
 
+static char *ipcmd[] = { "/bin/sh", "-c",
+	"ip_regex.sh | ipinfo.sh", NULL };
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
@@ -198,7 +201,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_v,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_V,           selpaste,       {.i =  0} },
 	{ TERMMOD,              XK_Num_Lock,    numlock,        {.i =  0} },
-	{ TERMMOD, 		XK_U,		externalpipe,	{ .v = openurlcmd } },
+	{ TERMMOD, 		XK_L,		externalpipe,	{ .v = openurlcmd } },
+	{ TERMMOD, 		XK_I,		externalpipe,	{ .v = ipcmd } },
         { MODKEY,               XK_l,           copyurl,        {.i =  0} },
         { MODKEY,               XK_k,           kscrollup,      {.i =  1} },
         { TERMMOD,              XK_K,           kscrollup,      {.i = -1} },
