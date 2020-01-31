@@ -4,10 +4,10 @@ my fork of the suckless simple terminal (st)
 ### INSTALL
 `git clone https://github.com/jsav0/st`  
 `sudo make install`
-#### INSTALL DEPENDENCIES:  
-On Debian (and related):  
+> INSTALL DEPENDENCIES:  
+> > On Debian (and related):  
 `sudo apt-get install git gcc make libx11-dev libxft-dev`  
-On Void:  
+> > On Void:  
 `sudo xbps-install -S git gcc make libXft libX11 libX11-dev`
 ---
 Included patches: (2020-01-30)
