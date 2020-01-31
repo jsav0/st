@@ -2,8 +2,9 @@
 my fork of the suckless simple terminal (st)  
 ![screenshot](http://n0a110w.xyz/img/compress/iseG.png)
 ### INSTALL
-`git clone https://github.com/jsav0/st  
-sudo make install`
+```git clone https://github.com/jsav0/st
+sudo make install```
+
 > DEPENDENCIES:  
 > > On Debian (and related):  
 `sudo apt-get install git gcc make libx11-dev libxft-dev`  
