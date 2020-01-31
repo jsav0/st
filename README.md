@@ -1,5 +1,6 @@
 # st
 my fork of the suckless simple terminal (st)  
+![screenshot](http://n0a110w.xyz/img/compress/iseG.png)
 Included patches: (2020-01-30)
 - external pipe
   - `super + l` : cycle thru, highlight and copy links that are in view  
@@ -22,4 +23,3 @@ Included patches: (2020-01-30)
 `git clone https://github.com/jsav0/st
 sudo make install`
 
-![screenshot](http://n0a110w.xyz/img/compress/iseG.png)
