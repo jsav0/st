@@ -2995,7 +2995,7 @@ copyurl(const Arg *arg) {
                "abcdefghijklmnopqrstuvwxyz"
                "0123456789-._~:/?#@!$&'*+,;=%";
 
-       static const char* URLSTRINGS[] = {"http://", "https://"};
+       static const char* URLSTRINGS[] = {"http://", "https://", "gopher://"};
 
        /* remove highlighting from previous selection if any */
        if(sel.ob.x >= 0 && sel.oe.x >= 0)
